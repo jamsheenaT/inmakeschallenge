@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block body %}
+<img src="{{movie.movieimage.url}}" width="250" height="250"><br>
+{{movie.moviename}}<br>
+{{movie.moviedesc}}<br>
+{{movie.year}}<br>
+<a  href="{% url 'challengeapp:update' movie.id %}">Update</a>
+{% endblock %}

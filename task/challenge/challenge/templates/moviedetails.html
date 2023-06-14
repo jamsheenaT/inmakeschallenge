@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block body %}
+Movies are:<br>
+{% for i in movie_list %}
+<a href="{% url 'challengeapp:details' i.id %}">{{i.moviename}}<br>
+{% endfor %}
+{% endblock %}
